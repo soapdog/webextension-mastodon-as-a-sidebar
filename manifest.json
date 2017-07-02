@@ -1,0 +1,39 @@
+{
+
+  "manifest_version": 2,
+  "name": "Mastodon as a Sidebar",
+  "description": "Displays a sidebar that lets you talk to your friends using Mastodon.",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "54.0a1"
+    }
+  },
+
+  "icons": {
+    "512": "icons/icon512.png"
+  },
+
+  "sidebar_action": {
+    "default_icon": {
+      "48": "icons/icon_48.png",
+      "96": "icons/icon_96.png"
+    },
+    "default_title" : "Mastodon",
+    "default_panel": "index.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+
+  "permissions": [
+    "<all_urls>",
+    "storage", 
+    "tabs", 
+    "webRequest", 
+    "webRequestBlocking"
+  ]
+
+}
