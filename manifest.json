@@ -16,8 +16,7 @@
 
   "sidebar_action": {
     "default_icon": {
-      "48": "icons/icon_48.png",
-      "96": "icons/icon_96.png"
+      "512": "icons/icon512.png"
     },
     "default_title" : "Mastodon",
     "default_panel": "index.html"

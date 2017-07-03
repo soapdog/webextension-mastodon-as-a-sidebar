@@ -9,3 +9,4 @@ Allows it to run [Mastodon](https://mastodon.social) as a sidebar on your browse
 ![screenshot](screenshot.png)
 
 ## Icon
+[Icon by Alex T](https://www.iconfinder.com/icons/1844707/food_pineapple_summer_tropical_vacation_icon#size=512)
