@@ -25,6 +25,7 @@ function saveNewInstance(instance) {
     instancesListData.push(instance);
     localStorage.setItem("instances", JSON.stringify(instancesListData))
     refreshInstancesList();
+    launchInstance(instance);
 }
 
 function removeCurrentInstanceFromList() {
@@ -52,17 +53,21 @@ function refreshInstancesList() {
     });
 }
 
-// Hook instance list events
-
-instancesListEl.addEventListener("change", function(ev) {
+function launchInstance(instance) {
     wrapperEl.setAttribute("src", "loading.html");
     // Needed to display some page while loading happens...
     setTimeout(function() {
-        currentInstance = ("https://" + ev.target.value);
+        instancesListEl.value = instance;
+        currentInstance = ("https://" + instance);
         wrapperEl.setAttribute("src", currentInstance);
         localStorage.setItem("last_instance", currentInstance);
     }, 200);
+}
 
+// Hook instance list events
+
+instancesListEl.addEventListener("change", function(ev) {
+    launchInstance(ev.target.value);
     console.log(ev);
 });
 
@@ -76,4 +81,5 @@ if (currentInstance.indexOf("https://") == -1) {
 }
 
 wrapperEl.setAttribute("src",  currentInstance);
+instancesListEl.value = currentInstance.replace(/^https?\:\/\//i, "");
 
