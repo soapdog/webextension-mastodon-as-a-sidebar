@@ -1,4 +1,4 @@
-browser.webRequest.onHeadersReceived.addListener(
+chrome.webRequest.onHeadersReceived.addListener(
     function(info) {
 
         function checkHeader(header) {
