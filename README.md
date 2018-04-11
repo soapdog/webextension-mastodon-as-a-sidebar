@@ -2,11 +2,11 @@
 
 ## What it does
 
-Allows it to run [Mastodon](https://mastodon.social) as a sidebar on your browser.
+Allows it to run [Mastodon](https://mastodon.social) as a sidebar on your browser. It uses the [Pinafore](https://pinafore.social) client by [Nolan Lawson](https://github.com/nolanlawson/pinafore)
 
 ## Screenshot
 
-![animation](mastodon-demo.gif)
+![screenshot](screenshot.png)
 
 ## Icon
-[Icon by Alex T](https://www.iconfinder.com/icons/1844707/food_pineapple_summer_tropical_vacation_icon#size=512)
+[Icon by Pinafore project](https://github.com/nolanlawson/pinafore)
