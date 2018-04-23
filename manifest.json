@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Mastodon as a Sidebar",
   "description": "Displays a sidebar that lets you talk to your friends using Mastodon.",
-  "version": "2.1",
+  "version": "2.2",
   "applications": {
     "gecko": {
       "strict_min_version": "54.0a1"
@@ -10,6 +10,14 @@
   },
   "icons": {
     "512": "icons/icon512.png"
+  },
+  "commands": {
+    "_execute_sidebar_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+M"
+      },
+      "description": "Opens and closes Mastodon sidebar"
+    }
   },
   "sidebar_action": {
     "default_icon": {
